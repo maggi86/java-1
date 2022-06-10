@@ -1,15 +1,15 @@
+
+names = ["Michaela", "Meagan",
+"Charles", "Liam", 
+"Rasheedah", "Bulelani"];
+const wrapper = document.createElement('ul');
+document.getElementsByTagName('body')[0].appendChild(wrapper);
 function smartPeople() {
-    console.log(smartPeople); 
+names.forEach(item => {
+  var list = document.createElement('li')
+  list.innerHTML += item;
+  wrapper.appendChild(list);
+});
 }
+smartPeople();
 
-let firstNames = [
-    'Michaela', 'Meagan',
-    'Charles', 'Liam', 
-    'Rasheedah', 'Bulelani'
-];
-
-let cnt = 0;
-do{
-    console.log(firstNames[cnt]);
-    cnt++;
-    }while(cnt < firstNames.length);
